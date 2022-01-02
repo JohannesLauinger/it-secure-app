@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:it_security_app/Screens/Angebote/angebot_screen.dart';
 import 'package:it_security_app/Screens/Home/home_screen.dart';
+import 'package:it_security_app/Screens/Kurse/kurse_screen.dart';
 import 'package:it_security_app/Screens/Login/login_screen.dart';
 import 'package:it_security_app/Screens/Quiz/quiz_screen.dart';
 import 'package:it_security_app/Screens/Settings/settings_screen.dart';
@@ -23,8 +24,8 @@ class NavigationDrawerWidget extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               buildMenuItem(
-                text: 'Quiz',
-                icon: Icons.live_help,
+                text: 'Kurse',
+                icon: Icons.movie_filter,
                 onClicked: () => selectedItem(context, 1),
               ),
               const SizedBox(height: 16),
@@ -50,6 +51,12 @@ class NavigationDrawerWidget extends StatelessWidget {
                 text: 'Software',
                 icon: Icons.api,
                 onClicked: () => selectedItem(context, 5),
+              ),
+              const SizedBox(height: 16),
+              buildMenuItem(
+                text: 'Quiz',
+                icon: Icons.live_help,
+                onClicked: () => selectedItem(context, 6),
               )
             ])));
   }
@@ -81,7 +88,7 @@ class NavigationDrawerWidget extends StatelessWidget {
         break;
       case 1:
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => QuizScreen(),
+          builder: (context) => KurseScreen(),
         ));
         break;
       case 2:
@@ -102,6 +109,11 @@ class NavigationDrawerWidget extends StatelessWidget {
       case 5:
         Navigator.of(context).push(MaterialPageRoute(
           builder: (context) => SoftwareScreen(),
+        ));
+        break;
+      case 6:
+        Navigator.of(context).push(MaterialPageRoute(
+          builder: (context) => QuizScreen(),
         ));
         break;
     }

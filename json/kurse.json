@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Datenraub",
+        "img": "assets/images/sampepic.png"
+    },
+    {
+        "title": "Verschlüsselung",
+        "img": "assets/images/sampepic.png"
+    },
+    {
+        "title": "Identitätsdiebstahl",
+        "img": "assets/images/sampepic.png"
+    },
+    {
+        "title": "Phishing",
+        "img": "assets/images/sampepic.png"
+    },
+    {
+        "title": "Backups",
+        "img": "assets/images/sampepic.png"
+    },
+    {
+        "title": "Datenschutz",
+        "img": "assets/images/sampepic.png"
+    },
+    {
+        "title": "Cloud",
+        "img": "assets/images/sampepic.png"
+    }
+]
